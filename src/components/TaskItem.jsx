@@ -1,18 +1,17 @@
 import React from "react";
-import { Task } from "../taskType";
 
 const TaskItem = ({ task, toggleComplete, deleteTask }) => {
   return (
     <div>
-      <div>
+      <div id="internalDisplay">
         <input
           type="checkbox"
           checked={task.completed}
           onChange={() => toggleComplete(task.id)}
         />
         <p>{task.text}</p>
+        <button onClick={() => deleteTask(task.id)}>Delete</button>
       </div>
-      <button onClick={() => deleteTask(task.id)}>Delete</button>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import AddTaskForm from "./components/AddTaskForm";
 import TaskList from "./components/TaskList";
-import { Task as task } from "./taskType";
 import "./App.css";
 
 function App() {
@@ -26,9 +25,9 @@ function App() {
 
   const toggleComplete = (id) => {
     setTasks(
-      tasks.map((task) => {
-        task.id === id ? { ...tasks, completed: !task.completed } : task;
-      })
+      tasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
     );
   };
 

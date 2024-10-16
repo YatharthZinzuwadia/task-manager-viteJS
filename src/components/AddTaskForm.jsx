@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Task } from "../taskType";
 
 const AddTaskForm = ({ addTask }) => {
   const [taskText, setTaskText] = useState("");
