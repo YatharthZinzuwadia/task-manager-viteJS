@@ -18,6 +18,14 @@ const TaskItem = ({ task, toggleComplete, deleteTask }) => {
         >
           Delete
         </Button>
+
+        <Button
+          variant="contained"
+          id="editBtn"
+          onClick={() => editTask(task.id)}
+        >
+          Delete
+        </Button>
       </div>
     </div>
   );

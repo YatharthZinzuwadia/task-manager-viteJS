@@ -31,6 +31,14 @@ function App() {
     );
   };
 
+  const editTask = (id, updatedText) => {
+    setTasks(
+      tasks.map((task) => {
+        task.id === id ? { ...task, text: updatedText } : task;
+      })
+    );
+  };
+
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
