@@ -10,7 +10,7 @@ const TaskItem = ({ task, toggleComplete, deleteTask }) => {
           onChange={() => toggleComplete(task.id)}
         />
         <p>{task.text}</p>
-        <button onClick={() => deleteTask(task.id)}>Delete</button>
+        <button id="deleteBtn" onClick={() => deleteTask(task.id)}>Delete</button>
       </div>
     </div>
   );

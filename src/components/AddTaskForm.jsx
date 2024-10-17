@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button, TextField } from "@mui/material";
 
 const AddTaskForm = ({ addTask }) => {
   const [taskText, setTaskText] = useState("");
@@ -24,7 +25,8 @@ const AddTaskForm = ({ addTask }) => {
         value={taskText}
         onChange={(e) => setTaskText(e.target.value)}
       />
-      <button type="submit">Add</button>
+      {/* <button type="submit">Add</button> */}
+      <Button variant="contained">Add Task</Button>
     </form>
   );
 };
