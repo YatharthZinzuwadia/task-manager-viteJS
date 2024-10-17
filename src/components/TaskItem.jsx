@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@mui/material";
 
 const TaskItem = ({ task, toggleComplete, deleteTask }) => {
   return (
@@ -10,7 +11,13 @@ const TaskItem = ({ task, toggleComplete, deleteTask }) => {
           onChange={() => toggleComplete(task.id)}
         />
         <p>{task.text}</p>
-        <button id="deleteBtn" onClick={() => deleteTask(task.id)}>Delete</button>
+        <Button
+          variant="contained"
+          id="deleteBtn"
+          onClick={() => deleteTask(task.id)}
+        >
+          Delete
+        </Button>
       </div>
     </div>
   );

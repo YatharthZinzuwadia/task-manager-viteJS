@@ -87,6 +87,7 @@ p {
   background-color: #c82333;
 }
 
-button:focus {
+#deleteBtn:focus {
   outline: none;
 }
+

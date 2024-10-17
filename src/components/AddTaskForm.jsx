@@ -25,6 +25,12 @@ const AddTaskForm = ({ addTask }) => {
         value={taskText}
         onChange={(e) => setTaskText(e.target.value)}
       />
+      {/* <TextField
+        id="standard-basic"
+        label="New Task"
+        variant="standard"
+        sx={{ color: "text.primary" }}
+      /> */}
       {/* <button type="submit">Add</button> */}
       <Button variant="contained">Add Task</Button>
     </form>
